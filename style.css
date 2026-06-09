@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(34, 113, 69);
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+.hero-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    
+    background: 
+        linear-gradient(
+            to bottom,
+            rgba(34, 113, 69, 0.2) 0%,
+            rgba(34, 113, 69, 0.6) 70%,
+            rgb(34, 113, 69) 100%
+        ),
+        url("heistall.03_COPYRIGHT_Daniel-Buchwald.jpg");
+
+        filter: brightness(0.85) contrast(1.2);
+    
+    background-size: cover;
+    background-position: center;
+    
+    z-index: -1;
+}
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(34, 113, 69, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 100
+}
+
+.logo {
+    font-size: 32pt;
+    font-weight: normal;
+}
+
+.video-hero {
+    width: 100%;
+    max-width: 900px;
+    margin: 140px auto 40px auto; /* plads til header */
+}
+
+.video-hero iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+
+
+nav {
+    font-family: "Caveat", cursive;
+    font-size: 18pt;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: aliceblue;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+.socials {
+    display: flex;
+    gap: 15px;
+}
+
+.socials a {
+    color: aliceblue;
+    font-size: 18pt;
+    transition: opacity 0.2s;
+}
+
+.socials a:hover {
+    opacity: 0.7;
+}
+
+/* Main content */
+main {
+    padding-top: 120px;
+}
+
+.section {
+    min-height: 80vh;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section h2 {
+    font-family: "Caveat", cursive;
+    font-size: 36pt;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.section p {
+    font-size: 14pt;
+    opacity: 0.8;
+}
+
+/* Signup form */
+.signup-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.signup-form input {
+    padding: 12px 20px;
+    border: 2px solid aliceblue;
+    background: transparent;
+    color: aliceblue;
+    font-size: 12pt;
+    outline: none;
+}
+
+.signup-form input::placeholder {
+    color: rgba(240, 248, 255, 0.6);
+}
+
+.signup-form button {
+    padding: 12px 25px;
+    border: 2px solid aliceblue;
+    background: aliceblue;
+    color: rgb(34, 113, 69);
+    font-size: 12pt;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.signup-form button:hover {
+    opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+    
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        font-size: 14pt;
+    }
+    
+    main {
+        padding-top: 180px;
+    }
+    
+    .signup-form {
+        flex-direction: column;
+    }
+}
