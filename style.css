@@ -127,6 +127,29 @@ main {
     opacity: 0.8;
 }
 
+
+
+.tour-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr auto;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    font-size: 14pt;
+}
+
+.tour-item a {
+    color: aliceblue;
+    text-decoration: none;
+    border: 1px solid aliceblue;
+    padding: 5px 10px;
+    transition: 0.2s;
+}
+
+.tour-item a:hover {
+    background: aliceblue;
+    color: rgb(34, 113, 69);
+}
+
 /* Signup form */
 .signup-form {
     display: flex;
