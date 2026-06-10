@@ -1,0 +1,18 @@
+[
+  {
+    "date": "12 oct 2026",
+    "city": "copenhagen, dk",
+    "venue": "vega",
+    "link": "https://billet.dk/123"
+  },
+  {
+    "date": "18 oct 2026",
+    "city": "berlin, de",
+    "venue": "lido",
+    "link": "https://tickets.de/456"
+  },
+  {"date": "20 oct 2026",
+    "city": "Paris, fr",
+    "venue": "louvre",
+    "link": "https://tickets.de/789"}
+]
