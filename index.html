@@ -85,10 +85,10 @@
     </main>
 
 
-    <!---JAVASCRIPT######## --->
+<!---JAVASCRIPT######## --->
 
 <script>
-fetch('tour.json')
+fetch("https://opensheet.elk.sh/1EN2O0crl9IiY86P0XKv5GPs8OWL54kP0QrYDUvLqGYQ/Tour_data")
   .then(res => res.json())
   .then(data => {
     const container = document.getElementById('tour-list');
@@ -98,10 +98,10 @@ fetch('tour.json')
       div.classList.add('tour-item');
 
       div.innerHTML = `
-        <span>${show.date}</span>
-        <span>${show.city}</span>
-        <span>${show.venue}</span>
-        <a href="${show.link}" target="_blank">tickets</a>
+        <span>${show.Date}</span>
+        <span>${show.City}</span>
+        <span>${show.Venue}</span>
+        <a href="${show['Ticket Link']}" target="_blank">tickets</a>
       `;
 
       container.appendChild(div);
