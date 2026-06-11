@@ -135,6 +135,8 @@ main {
     padding: 15px 0;
     border-bottom: 1px solid rgba(255,255,255,0.2);
     font-size: 14pt;
+    transition: 0.3s;
+
 }
 
 .tour-item a {
@@ -206,4 +208,16 @@ main {
     .signup-form {
         flex-direction: column;
     }
+}
+
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
