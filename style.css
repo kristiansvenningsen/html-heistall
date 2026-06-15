@@ -221,3 +221,86 @@ main {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+/* SHOP SECTION */
+.shop {
+    padding-top: 100px;
+}
+
+.shop-sub {
+    opacity: 0.7;
+    margin-bottom: 40px;
+}
+
+/* GRID */
+.shop-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* PRODUCT CARD */
+.product {
+    text-decoration: none;
+    color: aliceblue;
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 30px;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* HOVER */
+.product:hover {
+    border-color: aliceblue;
+    transform: translateY(-5px);
+}
+
+/* IMAGE */
+.product img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+
+/* INFO */
+.product-info {
+    text-align: center;
+}
+
+.product-info h3 {
+    font-family: "Caveat", cursive;
+    font-size: 22pt;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.price {
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+/* BUTTON LOOK */
+.btn {
+    display: inline-block;
+    border: 1px solid aliceblue;
+    padding: 10px 20px;
+    font-size: 12pt;
+    transition: 0.2s;
+}
+
+.product:hover .btn {
+    background: aliceblue;
+    color: rgb(34, 113, 69);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .shop-grid {
+        grid-template-columns: 1fr;
+    }
+}
