@@ -36,10 +36,22 @@
             <!-- <a href="#signup"> SIGNUP </a> --->
         </nav>
         <div class="socials">
-            <a href="https://www.instagram.com/heistall1/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://open.spotify.com/artist/516BRf3Jmc4O96VsNWUSTX" target="_blank" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
-            <a href="https://www.youtube.com/channel/UC3uQp58XUoPDreorfdWtMdA" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.facebook.com/heistall" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/heistall1/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram" onclick="gtag('event', 'instagram_click', {
+            'event_category': 'engagement',
+            'event_label': 'instagram'
+                                })"></i></a>
+            <a href="https://open.spotify.com/artist/516BRf3Jmc4O96VsNWUSTX" target="_blank" aria-label="Spotify" onclick="gtag('event', 'spotify_click', {
+     'event_category': 'engagement',
+     'event_label': 'spotify'
+   })"><i class="fab fa-spotify"></i></a>
+            <a href="https://www.youtube.com/channel/UC3uQp58XUoPDreorfdWtMdA" target="_blank" aria-label="YouTube"><i class="fab fa-youtube" onclick="gtag('event', 'youtube_click', {
+     'event_category': 'engagement',
+     'event_label': 'youtube'
+   })"></i></a>
+            <a href="https://www.facebook.com/heistall" target="_blank" aria-label="Facebook" onclick="gtag('event', 'facebook_click', {
+     'event_category': 'engagement',
+     'event_label': 'facebook'
+   })"><i class="fab fa-facebook"></i></a>
         </div>
     </header>
 
